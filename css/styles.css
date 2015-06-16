@@ -1,0 +1,179 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/********* FONTS *********/
+
+h1 {
+	font-size: 3em;
+	padding-top: 12%;
+	color: white;
+}
+
+h2 {
+	font-size: 2.5em;
+	padding: 1em;	
+}
+
+h3 {
+	font-size: 2em;
+	padding: 1em;
+}
+
+h4 {
+	font-size: 1.25em;
+	padding: 0.5em;
+}
+
+/********* BODY *********/
+body {
+	font-family: sans-serif;
+	width: auto;
+}
+
+/********* WRAPPER *********/
+
+#wrapper {
+	text-align: center;	
+}
+
+/********* NAVIGATION *********/
+nav {
+	position: fixed;
+	background-color: rgb(50,50,50);
+	width: 100%;
+	height: 4%;
+	padding-top: 2.5%;
+	text-align: center;
+	box-shadow: 0px 0px 5px 0px #000000;
+	z-index: 1;
+}
+
+nav ul li {
+	display: inline;	
+	padding: 2em;
+}
+
+nav a:link {
+	color: rgb(255, 255, 255);
+	text-decoration: none;
+}
+
+
+nav a:visited {
+	color: rgb(255, 255, 255);	
+}
+
+
+nav a:hover {
+	color: rgb(183, 255, 234);	
+}
+
+
+/********* HOME **********/
+#home {
+	background-image: url(../images/screen1.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	width: 100%;
+	height: 900px;
+	text-align: center;
+	overflow: inherit;
+}
+
+#home img {
+	height: 60%;
+	width: auto;	
+	padding-top: 5%;
+	position: relative;
+}
+
+
+/********** PORTFOLIO *********/
+#portfolio {
+	background-color: #EBEBEB;
+	max-width: 100%;
+	max-height: 100%;
+	display: block;
+
+}
+
+
+#portfolio li {
+	display: inline-block;	
+	text-align: center;
+}
+
+
+/********** DIVIDER **********/
+#divider {
+	background-image: url(../images/great_mother_archetype_amie_villiger02);
+	background-size: cover;
+	background-repeat: no-repeat;
+	/*background-position:*/ 
+	height: 600px;
+	max-width: 100%;
+	display: block;	
+}
+
+/********** ABOUT **********/
+#about {
+	width: 80%;
+	height: auto;
+	margin: 0 auto;
+}
+
+
+#about_img {
+	float: left;
+	padding: 2.5%;
+	max-width: 30%;
+	display: inline;
+}
+
+#about_text {
+	float: right;
+	padding: 2.5%;
+	max-width: 60%;
+	display: inline;
+	
+}
+
+.bio {
+	padding: 2em;
+	font-size: 1em;	
+	text-align: left;
+	line-height: 150%;
+}
+
+.bio a:link {
+	color: rgb(125, 125, 125);
+}
+
+.bio a:visited {
+	color: rgb(125, 125, 125);
+}
+
+.bio a:hover {
+	color: rgb(195, 195, 195);
+}
+
+/********* FOOTER *********/
+#footer {
+	background-color: rgb(50,50,50);
+	max-width: 100%;
+	height: 12%;
+	text-align: center;
+	clear: both;
+	padding-top: 5%;
+}
+
+.icons {
+	display: inline;
+	max-width: 33%;	
+	padding: 2.5%;
+}
+
+
+
+
+/********** MEDIA QUERIES *********/
