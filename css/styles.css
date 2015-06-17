@@ -3,31 +3,38 @@
 
 /********* FONTS *********/
 
+html {
+	font-family: 'Cabin', sans-serif;
+}
+
+
 h1 {
-	font-size: 3em;
-	padding-top: 12%;
+	font-size: 1.5em;
+	padding-top: 1%;
 	color: white;
+	display: inline;
+	padding-bottom: 5%;
 }
 
 h2 {
-	font-size: 2.5em;
+	font-size: 2em;
 	padding: 1em;	
 }
 
 h3 {
-	font-size: 2em;
-	padding: 1em;
+	font-size: 1.5em;
+	padding: 1.5em;
 }
 
 h4 {
-	font-size: 1.25em;
+	font-size: 1em;
 	padding: 0.5em;
 }
 
 /********* BODY *********/
 body {
-	font-family: sans-serif;
 	width: auto;
+	font-size: 0.75em;
 }
 
 /********* WRAPPER *********/
@@ -42,7 +49,7 @@ nav {
 	background-color: rgb(50,50,50);
 	width: 100%;
 	height: 4%;
-	padding-top: 2.5%;
+	padding-top: 2%;
 	text-align: center;
 	box-shadow: 0px 0px 5px 0px #000000;
 	z-index: 1;
@@ -75,15 +82,20 @@ nav a:hover {
 	background-size: cover;
 	background-repeat: no-repeat;
 	width: 100%;
-	height: 900px;
+	height: auto;
+	min-height: 500px;
+	max-height: 800px;
 	text-align: center;
 	overflow: inherit;
+	display: block;
 }
 
 #home img {
-	height: 60%;
-	width: auto;	
-	padding-top: 5%;
+	height: auto;
+	width: 60%;
+	max-width: 500px;	
+	padding-top: 15%;
+	padding-bottom: 10%;
 	position: relative;
 }
 
@@ -92,27 +104,32 @@ nav a:hover {
 #portfolio {
 	background-color: #EBEBEB;
 	max-width: 100%;
-	max-height: 100%;
 	display: block;
-
+	padding-top: 1%;
+	overflow: auto;
+	padding-bottom: 1%;
+}
+#portfolio ul {
+	list-style-position: inside;
 }
 
 
 #portfolio li {
 	display: inline-block;	
 	text-align: center;
+	list-style-position: inside;
 }
 
 
 /********** DIVIDER **********/
 #divider {
-	background-image: url(../images/great_mother_archetype_amie_villiger02);
+	background-image: url(../images/water_divide.jpg);
 	background-size: cover;
 	background-repeat: no-repeat;
 	/*background-position:*/ 
-	height: 600px;
+	height: 100px;
 	max-width: 100%;
-	display: block;	
+	display: block;
 }
 
 /********** ABOUT **********/
@@ -120,22 +137,23 @@ nav a:hover {
 	width: 80%;
 	height: auto;
 	margin: 0 auto;
+	display: block;
+	clear: both;
 }
 
 
 #about_img {
 	float: left;
 	padding: 2.5%;
-	max-width: 30%;
+	max-width: 20%;
 	display: inline;
 }
 
 #about_text {
 	float: right;
 	padding: 2.5%;
-	max-width: 60%;
+	max-width: 50%;
 	display: inline;
-	
 }
 
 .bio {
@@ -157,6 +175,18 @@ nav a:hover {
 	color: rgb(195, 195, 195);
 }
 
+/********** DIVIDER 2 **********/
+#divider2 {
+	background-image: url(../images/water_divide.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	/*background-position:*/ 
+	height: 75px;
+	max-width: 100%;
+	display: block;
+	clear: both;
+}
+
 /********* FOOTER *********/
 #footer {
 	background-color: rgb(50,50,50);
@@ -165,6 +195,7 @@ nav a:hover {
 	text-align: center;
 	clear: both;
 	padding-top: 5%;
+	display: block;
 }
 
 .icons {
@@ -177,3 +208,70 @@ nav a:hover {
 
 
 /********** MEDIA QUERIES *********/
+
+/* MOBILE DEVICES */
+
+@media screen and (max-width: 680px) {
+
+
+	#about {
+		max-width: 100%;
+	}
+
+	#about_text {
+		display: block;
+		float: none;
+		max-width: 98%;
+		padding: 0 1% 0 1%;
+	}
+
+	#about_img {
+		display: block;
+		float: none;
+		max-width: 80%;
+		padding: 10% 10% 2% 10%;
+	}
+
+}
+
+@media screen and (max-width: 480px) { 
+
+	#home img {
+		padding-top: 35%;
+	}
+
+	nav {
+		height: 15%;
+		padding-top: 4%;
+	}
+
+	nav ul li {
+	display: block;
+	font-size: 95%;
+	padding-left: 5px;
+	padding-right: 5px
+	padding-bottom: 0;
+	padding-top: 0;
+	line-height: 0.01rem;
+
+	}
+
+	#portfolio {
+		padding-top: 4%;
+	}
+}
+
+
+@media screen and (min-width: 960px) { 
+
+#home img {
+
+	width: 60%;
+	max-width: 500px;	
+	padding-top: 10%;
+	padding-bottom: 10%;
+	position: relative;
+}
+}
+
+
