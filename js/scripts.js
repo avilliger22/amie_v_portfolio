@@ -1,4 +1,4 @@
-//Lightbox
+// Lightbox
 
 var $overlay = $('<div id="overlay"></div>');
 var $image = $("<img>");
@@ -41,3 +41,49 @@ $overlay.click(function() {
     //Hide the overlay
  $overlay.hide(); 
 });
+
+
+
+
+
+//SCROLL TO ANCHORS
+
+$(document).ready(function() {
+    $("#aboutA").click(function() {
+    $('html, body').animate({
+      scrollTop: $("#aboutAnchor").offset().top
+    }, 1000);
+  });
+});
+
+$(document).ready(function() {
+    $("#homeA").click(function() {
+    $('html, body').animate({
+      scrollTop: $("#homeAnchor").offset().top
+    }, 1000);
+  });
+});
+
+$(document).ready(function() {
+    $("#portA").click(function() {
+    $('html, body').animate({
+      scrollTop: $("#portAnchor").offset().top
+    }, 1000);
+  });
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
