@@ -107,7 +107,7 @@ nav a:hover {
 	display: block;
 	padding-top: 1%;
 	overflow: auto;
-	padding-bottom: 1%;
+	padding-bottom: 2%;
 }
 #portfolio ul {
 	list-style-position: inside;
@@ -227,7 +227,9 @@ nav a:hover {
 }
 
 #overlay p {
+ font-size: 1rem;
  color: white; 
+ padding-top: 1%;
 }
 
 
