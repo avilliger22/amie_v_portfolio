@@ -145,6 +145,7 @@ nav a:hover {
 #about_img {
 	float: left;
 	padding: 2.5%;
+	padding-top: 10%;
 	max-width: 20%;
 	display: inline;
 }
@@ -208,18 +209,21 @@ nav a:hover {
 /** JS Overlay Lightbox **/
 
 #overlay {
-  background: rgba(0,0,0,0.6);
+  background: rgba(0,0,0,0.5);
   width: 100%;
   height: 100%;
-  position: absolute;
-  top: 50%;
+  position: fixed;
+  top: 0;
   left: 0;
   display: none;
   text-align: center;
+  overflow-x: scroll;
 }
 
 #overlay img {
- margin-top: 10%; 
+ margin-top: 8%;
+ position: relative;
+ height: 80%;
 }
 
 #overlay p {
